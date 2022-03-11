@@ -1,0 +1,49 @@
+﻿The Big_Bank
+Documento sujeito a alterações
+Última alteração 10 / 03 / 2022
+
+
+O sistema deve funcionar como um banco, só pela parte do usuário. O deve fazer o cadastro de novos usuários, armazenar esse usuários em um banco de dados local e fazer o login desses usuários posteriormente. Sempre seguindo os conceitos de OCP e ISP para manter um desenvolvimento limpo e expansível.
+
+
+Requisitos funcionais:
+[RF01] Criação de usuário.
+        Deve ser capaz de criar um novo usuário. Cada usuário deve ser capaz de fazer:
+* Depósitos;
+* Saques;
+* Transferências;
+* Empréstimos;
+* Ver extrato;
+* Ver informações da conta;
+* Fechar conta;
+
+
+[RF02] Login de usuário existente.
+        Deve ser capaz de fazer o login de um usuário já existente no banco de dados local;
+
+
+
+
+Requisitos não funcionais:
+[NF01] Linguagem a utilizar.
+        O sistema deve ser desenvolvido na linguagem Python;
+
+
+[NF02] Armazenamento de dados.
+        O sistema deve ter um banco de dados local para armazenar as informações de cada conta;
+
+
+[NF03] Informações de conta.
+        Cada conta deve conter os seguintes parâmetros:
+* N° da conta;
+   * EX: 0001
+* Nome do usuário;
+* CPF;
+   * Fazer validação do CPF
+* Extrato;
+* Débitos com datas de pagamentos
+   * Sujeito a juros caso data for excedida;
+
+
+Lembrete:
+# TKinter
